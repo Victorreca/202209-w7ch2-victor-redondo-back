@@ -19,7 +19,7 @@ module.exports = {
       },
     },
     {
-      files: ["src/database/model/Robots.ts"],
+      files: ["src/**/models/**/*.ts"],
       rules: { "@typescript-eslint/naming-convention": "off" },
     },
   ],
@@ -27,5 +27,7 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  rules: {},
+  rules: {
+    "no-implicit-coercion": "off",
+  },
 };
