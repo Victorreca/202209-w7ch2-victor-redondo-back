@@ -3,7 +3,7 @@ import jwt from "jsonwebtoken";
 import bcrypt from "bcryptjs";
 import CustomError from "../../../CustomError/CustomError.js";
 import User from "../../../database/model/User.js";
-import type { Credentials, UserTokenPayload } from "../types";
+import type { Credentials } from "../types";
 import environment from "../../../loadEnvironment.js";
 
 export const loginUser = async (
@@ -35,7 +35,7 @@ export const loginUser = async (
     return;
   }
 
-  const tokenPayload: UserTokenPayload = {
+  const tokenPayload = {
     id: user._id.toString(),
     username,
   };

@@ -18,4 +18,4 @@ jobs:
         run: npm test
         env:
           REACT_APP_API_URL_LOCAL: ${{https://berto-xavi-202209-w6chwe.herokuapp.com/robots/}}
-          TOKKEN_AUTH: ${{benderElQueOfende}}
+          JWT_SECRET: af1dbc5648a563e9a5bd97d0eb68f41b
